@@ -1,13 +1,15 @@
 .wrapper {
   display: flex;
   height: 100vh;
-  /* width: 100vw; */
-  border: 1px solid red;
+
 }
 
-.inner-wrapper{
-    /* height: 100vh; */
-  /* width: 100vw; */
+.content-wrapper{
+  height: calc(100vh - 50px);
+  background-color: #e6e7ea;
   width: 100%;
-  border: 1px solid green;
+
+}
+.inner-wrapper{
+  width: 85%;
 }

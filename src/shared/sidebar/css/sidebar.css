@@ -1,0 +1,21 @@
+.sidebar-parent {
+  width: 15%;
+}
+.logo {
+  padding: 1.5rem 3rem 3rem 3rem;
+}
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar-item {
+  cursor: pointer;
+  padding: 0.8rem 3rem;
+  font-size: 13px;
+  font-weight: 500;
+}
+.sidebar-active-item {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  cursor: pointer;
+}

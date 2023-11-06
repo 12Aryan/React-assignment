@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "../shared/header/Header";
-import Sidebar from "../shared/sidebar/Sidebar";
+import Header from "../shared/header/component/Header";
+import Sidebar from "../shared/sidebar/component/Sidebar";
 import Dashboard from "../features/Dashboard/Dashboard";
 import "./AppRoutes.css";
 
@@ -9,13 +9,16 @@ const AppRoutes = () => {
     <div className="wrapper">
       <Sidebar />
       <div className="inner-wrapper">
-        <BrowserRouter>
-          <Routes>
-            <Route element={<Header />}>
+        <Header />
+        <div className="content-wrapper">
+          <BrowserRouter>
+            <Routes>
+            <Route path="*" element={<Dashboard />} />
               <Route path="/" element={<Dashboard />} />
-            </Route>
-          </Routes>
-        </BrowserRouter>
+              {/* <Route path="/" element={<Dashboard />} /> */}
+            </Routes>
+          </BrowserRouter>
+        </div>
       </div>
     </div>
   );
