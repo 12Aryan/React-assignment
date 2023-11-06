@@ -5,19 +5,23 @@ const Header = () => {
   return (
     <>
       <div className="header d-flex justify-content-end align-items-center">
-        <div className="col-lg-6">
-          <div className="input-group">
+        <div className="d-flex justify-content-center gap-3 align-items-center p-2">
+          <div className="input-group ">
             <input
               type="text"
               className="form-control"
               placeholder="Search for..."
             />
           </div>
+
+          <i className="fa fa-bell" aria-hidden="true"></i>
+          {/* <img src="/codewallpaper.png" alt="profile-icon" /> */}
+          <div className="circle"></div>
+          <i className="fa fa-caret-down" aria-hidden="true"></i>
+
         </div>
-        <i className="fa fa-bell" aria-hidden="true"></i>
-        <img src="/codewallpaper.png" alt="" />
       </div>
-      <Outlet />
+      {/* <Outlet /> */}
     </>
   );
 };
