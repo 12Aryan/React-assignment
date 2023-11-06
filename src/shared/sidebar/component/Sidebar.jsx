@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "../css/sidebar.css";
 import { sidebarData } from "./sidebarData";
-const sidebar = () => {
+import { Link } from "react-router-dom";
+const Sidebar = () => {
   const [active, setActive] = useState(0);
   const handleSidebarItemClick = (e) => {
-    console.log(e.target.id);
     setActive(Number(e.target.id));
   };
   return (
@@ -15,16 +15,18 @@ const sidebar = () => {
         <div className="">
           {sidebarData.map((data, i) => {
             return (
-              <div
-                key={data.id}
-                id={i}
-                className={`${
-                  i === active ? "sidebar-active-item" : ""
-                } sidebar-item`}
-                onClick={handleSidebarItemClick}
-              >
-                <i className={`${data.icon} me-1`}></i>{data.name}
-              </div>
+              <Link to={data.route} key={data.id}>
+                <div
+                  id={i}
+                  className={`${
+                    i === active ? "sidebar-active-item" : ""
+                  } sidebar-item`}
+                  onClick={handleSidebarItemClick}
+                >
+                  <i className={`${data.icon} me-1`}></i>
+                  {data.name}
+                </div>
+              </Link>
             );
           })}
         </div>
@@ -33,4 +35,4 @@ const sidebar = () => {
   );
 };
 
-export default sidebar;
+export default Sidebar;

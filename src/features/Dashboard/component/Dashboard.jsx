@@ -19,8 +19,8 @@ const Dashboard = () => {
     "December",
   ];
   return (
-    <div className="dashboard-container">
-      <div className="row gap-1">
+    <div className="dashboard-container mx-auto">
+      <div className="row gap-3 mx-auto justify-content-center ">
         <div className="col-xxl-6 col-xl-6  col-md-6 col-sm-12 col-12 chart-section">
           <div className="chart-header">
             <span className="font-weight-bold"> Checking account </span>

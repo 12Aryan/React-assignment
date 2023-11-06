@@ -4,7 +4,7 @@ import * as d3 from 'd3';
 function WaveChart() {
   const chartRef = useRef(null);
   const [chartData, setChartData] = useState([]);
-  const width = 600; // Change the width to your desired value
+  const width = 500; // Change the width to your desired value
   const height = 150; // Change the height to your desired value
   const margin = { top: 5, right: 5, bottom: 5, left: 5 };
 
@@ -48,8 +48,6 @@ function WaveChart() {
       .attr('stroke-width', 2);
 
   }, [chartData, width, height, margin]);
-  console.log(chartData);
-
   return (
     <div className="wave-chart p-4">
       <svg ref={chartRef} width={width} height={height}></svg>

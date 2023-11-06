@@ -5,24 +5,25 @@
   justify-content: center;
   align-items: center; */
 }
-.font-weight-bold{
-    font-weight: 600 !important;
+.font-weight-bold {
+  font-weight: 600 !important;
 }
-.new-sales-btn{
-    color: #ffffff;
-    background-color: #47B747;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 4px;
+.new-sales-btn {
+  color: #ffffff;
+  background-color: #47b747;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
 }
-.chart-section{
-    background-color: var(--white-color);
-    /* border: 1px solid; */
-    /* padding: 2rem; */
-    width: 48%;
+.chart-section {
+  background-color: var(--white-color);
+  /* border: 1px solid; */
+  /* padding: 2rem; */
+  border-radius: 16px;
+  width: 48%;
 }
-.chart-header{
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
 }

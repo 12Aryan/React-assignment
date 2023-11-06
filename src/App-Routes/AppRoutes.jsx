@@ -11,13 +11,16 @@ const AppRoutes = () => {
       <div className="inner-wrapper">
         <Header />
         <div className="content-wrapper">
-          <BrowserRouter>
-            <Routes>
+          <Routes>
             <Route path="*" element={<Dashboard />} />
-              <Route path="/" element={<Dashboard />} />
-              {/* <Route path="/" element={<Dashboard />} /> */}
-            </Routes>
-          </BrowserRouter>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/dashboard " element={<Dashboard />} />
+            <Route path="/accounts" element={<Dashboard />} />
+            <Route path="/payroll" element={<Dashboard />} />
+            <Route path="/reports" element={<Dashboard />} />
+            <Route path="/advisor" element={<Dashboard />} />
+            <Route path="/contact" element={<Dashboard />} />
+          </Routes>
         </div>
       </div>
     </div>
