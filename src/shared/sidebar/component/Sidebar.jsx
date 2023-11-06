@@ -10,7 +10,7 @@ const sidebar = () => {
   return (
     <div className="sidebar-parent">
       <div className="sidebar-content">
-        <div className="logo">ASSIDUUS</div>
+        <h5 className="logo">ASSIDUUS</h5>
         {/* <button className="btn btn-primary">btn</button> */}
         <div className="">
           {sidebarData.map((data, i) => {
@@ -23,7 +23,7 @@ const sidebar = () => {
                 } sidebar-item`}
                 onClick={handleSidebarItemClick}
               >
-                {data.name}
+                <i className={`${data.icon} me-1`}></i>{data.name}
               </div>
             );
           })}

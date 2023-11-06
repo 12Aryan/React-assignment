@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "../shared/header/component/Header";
 import Sidebar from "../shared/sidebar/component/Sidebar";
-import Dashboard from "../features/Dashboard/Dashboard";
+import Dashboard from "../features/Dashboard/component/Dashboard";
 import "./AppRoutes.css";
 
 const AppRoutes = () => {

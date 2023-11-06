@@ -1,0 +1,12 @@
+.dashboard-container {
+  height: inherit;
+  padding: 1rem;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.chart-section{
+    background-color: var(--white-color);
+    border: 1px solid;
+    padding: 2rem;
+}
