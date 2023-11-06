@@ -1,6 +1,7 @@
+import './sidebar.css'
 const sidebar = () => {
   return (
-    <div>sidebar</div>
+    <div className='sidebar-parent'>sidebar</div>
   )
 }
 
