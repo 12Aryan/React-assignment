@@ -4,13 +4,13 @@ import WaveChart from "../../../charts/WaveChart/WaveChart";
 import Table from "../../../shared/table/component/Table";
 import "../css/dashboard.css";
 const Dashboard = () => {
-  const data = [30, 50, 40, 60, 40, 90]; // Example data
+  const data = [30, 50, 40, 60, 40, 90]; 
   const months = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
   ];
 
-  // Define data for each month
+
   const monthData = {
     January: generateRandomWaveData(),
     February: generateRandomWaveData(),
@@ -24,7 +24,7 @@ const Dashboard = () => {
     October: generateRandomWaveData(),
     November: generateRandomWaveData(),
     December: generateRandomWaveData(),
-    // Add data for other months as needed
+    
   };
 
   const [selectedMonth, setSelectedMonth] = useState("January");

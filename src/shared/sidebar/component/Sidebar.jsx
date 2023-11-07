@@ -10,7 +10,11 @@ const Sidebar = () => {
   return (
     <div className="sidebar-parent">
       <div className="sidebar-content">
-        <h5 className="logo">ASSIDUUS</h5>
+        <span className="d-flex align-items-center px-2 py-4">
+          <img src="/logo.png" className="h-25 w-25" alt="" />
+          <span className="m-0 logo-text">ASSIDUUS</span>
+        </span>
+
         {/* <button className="btn btn-primary">btn</button> */}
         <div className="">
           {sidebarData.map((data, i) => {
