@@ -15,8 +15,8 @@ const Header = () => {
           </div>
 
           <i className="fa fa-bell" aria-hidden="true"></i>
-          {/* <img src="/codewallpaper.png" alt="profile-icon" /> */}
-          <div className="circle"></div>
+          <img  className="profile-img" src="photo.jpg" alt="profile-icon" />
+          {/* <div className="circle"></div> */}
           <i className="fa fa-caret-down" aria-hidden="true"></i>
 
         </div>

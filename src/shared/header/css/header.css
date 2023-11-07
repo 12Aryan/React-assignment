@@ -1,9 +1,14 @@
-.header{
-    height: 50px;
+.header {
+  height: 50px;
 }
-.circle{
-    background: #eb6753;
-    height: 15px;
-    width: 20px;
-    border-radius: 50%;
+.circle {
+  background: #eb6753;
+  height: 15px;
+  width: 20px;
+  border-radius: 50%;
+}
+.profile-img {
+  height: 25px;
+  width: 32px;
+  border-radius: 50%;
 }
