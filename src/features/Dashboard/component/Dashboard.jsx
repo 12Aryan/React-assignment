@@ -67,10 +67,13 @@ const Dashboard = () => {
             <div className="chart-header">
               <span className="font-weight-bold"> Checking account </span>
               <span className="">
+              <select className="me-2 select-dropdown" name="" id="">
+                <option value="">Manage</option>
+              </select>
                 <select
                   name="months"
                   id="months"
-                  className="me-1"
+                  className="me-1 select-dropdown"
                   onChange={handleMonthChange}
                   value={selectedMonth}
                 >
