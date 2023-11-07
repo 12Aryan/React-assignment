@@ -3,10 +3,12 @@ import Header from "../shared/header/component/Header";
 import Sidebar from "../shared/sidebar/component/Sidebar";
 import Dashboard from "../features/Dashboard/component/Dashboard";
 import "./AppRoutes.css";
+import Modal from "../shared/modal/Modal";
 
 const AppRoutes = () => {
   return (
     <div className="wrapper">
+    <Modal/>  
       <Sidebar />
       <div className="inner-wrapper">
         <Header />

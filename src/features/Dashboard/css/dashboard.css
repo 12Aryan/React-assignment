@@ -13,6 +13,7 @@
   background-color: #47b747;
   border: none;
   padding: 5px 10px;
+  font-size: 11px;
   border-radius: 4px;
 }
 .chart-section {
@@ -26,4 +27,5 @@
   display: flex;
   justify-content: space-between;
   padding: 2rem;
+  border-bottom: 2px solid #d8d8d8;
 }

@@ -1,23 +1,20 @@
-import React, { useRef, useEffect, useState } from 'react';
+import  { useRef, useEffect, useState } from 'react';
 import * as d3 from 'd3';
 
-function WaveChart() {
+function WaveChart({ data, width, height }) {
   const chartRef = useRef(null);
-  const [chartData, setChartData] = useState([]);
-  const width = 500; // Change the width to your desired value
-  const height = 150; // Change the height to your desired value
+  const [chartData, setChartData] = useState(data);
   const margin = { top: 5, right: 5, bottom: 5, left: 5 };
 
   useEffect(() => {
-    // Fetch data only on the initial component mount
-    const data = d3.range(0, 100, 0.1).map((x) => [x, Math.sin(x)]);
-    setChartData(data);
-  }, []);
+    if (data) {
+      setChartData(data);
+    }
+  }, [data]);
 
   useEffect(() => {
-    // D3 code for creating the wave chart  
     if (chartData.length === 0) {
-      return; // Don't proceed if data is not available
+      return; 
     }
 
     const svg = d3.select(chartRef.current);
@@ -31,11 +28,10 @@ function WaveChart() {
     const line = d3
       .line()
       .x((d) => xScale(d[0]))
-      .y((d) => yScale(d[1]));
+      .y((d) => yScale(d[1]))
+      .curve(d3.curveCardinal.tension(0.5)); 
 
-    // You can add more styling, axes, and labels as needed
-
-    svg.selectAll('*').remove(); // Clear the chart
+    svg.selectAll('*').remove(); 
     const chartGroup = svg.append('g')
       .attr('transform', `translate(${margin.left}, ${margin.top})`);
 
@@ -48,6 +44,7 @@ function WaveChart() {
       .attr('stroke-width', 2);
 
   }, [chartData, width, height, margin]);
+
   return (
     <div className="wave-chart p-4">
       <svg ref={chartRef} width={width} height={height}></svg>
