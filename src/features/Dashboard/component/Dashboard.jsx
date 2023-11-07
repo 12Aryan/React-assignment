@@ -75,7 +75,7 @@ const Dashboard = () => {
                   value={selectedMonth}
                 >
                   {months.map((month, i) => (
-                    <option key={i} value={month}>
+                    <option key={i} value={month} className="options">
                       {month}
                     </option>
                   ))}
